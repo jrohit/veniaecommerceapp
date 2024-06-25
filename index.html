@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venia Apperals & Clothing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="site-title">VENIA</h1>
+      <nav class="navigator" aria-labelledby="site-title">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Smart Gear</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </nav>
+      <button
+        class="menu-icon"
+        onclick="toggleMenu(this)"
+        aria-label="Toggle menu"
+      >
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
+    </header>
+
+    <main>
+      <section aria-labelledby="banner-heading">
+        <div style="display: flex; justify-content: space-around">
+          <div class="banner-logo">
+            <h2 id="banner-heading">Men's Outerwear</h2>
+            <div class="banner-dash"></div>
+          </div>
+          <div class="banner" id="banner"></div>
+        </div>
+        <div class="banner-logo-mobileview">
+          <h2 id="banner-heading">Men's Outerwear</h2>
+          <div class="banner-dash"></div>
+        </div>
+      </section>
+
+      <nav aria-label="Breadcrumb">
+        <div class="breadcrumbs">Clothing / Men's / Outerwear</div>
+      </nav>
+
+      <section aria-labelledby="filters-heading">
+        <div class="filters">
+          <h3 id="filters-heading">Filters</h3>
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                id="jewelery"
+                name="category"
+                value="Jewellery"
+                onchange="handleCheckbox(this)"
+              />
+              <label for="jewelery">Jewellery</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="electronics"
+                name="category"
+                value="Electronics"
+                onchange="handleCheckbox(this)"
+              />
+              <label for="electronics">Electronics</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="men's clothing"
+                name="category"
+                value="Men's Clothing"
+                onchange="handleCheckbox(this)"
+              />
+              <label for="mens-clothing">Men's Clothing</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="women's clothing"
+                name="category"
+                value="Women's Clothing"
+                onchange="handleCheckbox(this)"
+              />
+              <label for="womens-clothing">Women's Clothing</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="sort-options">
+          <label for="sort">Sort by Price:</label>
+          <select id="sort" name="sort" aria-label="Sort by Price">
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+          </select>
+        </div>
+        <div class="loader" role="status" aria-live="polite"></div>
+        <div class="product-list" id="product-list" role="list"></div>
+        <div
+          class="pagination"
+          id="pagination"
+          role="navigation"
+          aria-label="Pagination"
+        ></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 VENIA. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
