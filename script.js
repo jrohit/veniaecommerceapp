@@ -1,4 +1,4 @@
-const apiUrl = "https://fakestoreapi.com/products"; // Replace with your API URL
+const apiUrl = "https://fakestoreapi.com/products";
 let currentPage = 1;
 let productsPerPage = 4;
 let sortOption = "asc";
