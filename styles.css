@@ -35,7 +35,7 @@ header nav ul li a {
 }
 
 #banner {
-  background: url('banner.jpg') no-repeat center center/cover;
+  background: url("banner.jpg") no-repeat center center/cover;
   color: #fff;
   padding: 10rem;
   text-align: center;
@@ -92,8 +92,10 @@ header nav ul li a {
   float: right;
 }
 
-.sort-options {
-  margin: 1rem;
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .product-list {
@@ -268,7 +270,7 @@ footer {
   }
 
   #banner {
-    background: url('banner.jpg') no-repeat center center/cover;
+    background: url("banner.jpg") no-repeat center center/cover;
     color: #fff;
     padding: 10rem;
     text-align: center;
